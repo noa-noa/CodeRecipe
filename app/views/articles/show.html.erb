@@ -8,22 +8,22 @@
     <body>
         <div id = "article_header">
             <div id = "article_title">
-                <p>サンプルタイトルだよ♡</p>
+                <h1>サンプルタイトルだよ♡<%= @article.title %></h1>
             </div>
             <div id = "article_tag">
-                <p>タグだよ♡</p>
+                <p><%= @article.tag %></p>
             </div>
         </div>
         <div id = "contents">
             <div id = "main-column" class = "column">
-                <p>内容だよ♡</p>
+                <div><%= @article.content %></div>
             </div>
             <div id = "sub-column" class = "column">
                 <p>サブカラムだよ♡</p>
             </div>
         </div>
         <div id="writer">
-            <p>書いた人だよ♡</p>
+            <p><%= @article.user_id %>さんが書いた人だよ♡</p>
         </div>
         <div id = "comments">
             <p>コメントだよ♡</p>

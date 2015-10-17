@@ -3,8 +3,10 @@ class CreateArticles < ActiveRecord::Migration
     create_table :articles do |t|
       t.string :title
       t.string :tag
-      t.string :file
       t.text :content
+      t.string :file
+      t.string :img
+      t.integer :user_id
 
       t.timestamps null: false
     end
