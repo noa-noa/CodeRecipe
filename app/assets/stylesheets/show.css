@@ -1,0 +1,49 @@
+#article_header{
+	width:100%;
+	background-color: red;
+}
+
+#article_title{
+	margin: 0 auto;
+	width:95%;
+	background-color: green;
+}
+
+#article_tag{
+	margin: 0 auto;
+	width:95%;
+	background-color: blue;
+}
+
+#contents{
+	margin: 0 auto;
+	width:95%;
+	background-color: red;
+}
+
+#main-column{
+	width: 80%;
+	background-color: green;
+}
+
+#sub-column{
+	width: 20%;
+	background-color: blue;
+}
+
+.column{
+	float: left
+}
+
+#writer{
+	margin: 0 auto;
+	width:95%;
+	background-color: yellow;
+	clear: both;
+}
+
+#comments{
+	margin: 0 auto;
+	width:95%;
+	background-color: blue;
+}
