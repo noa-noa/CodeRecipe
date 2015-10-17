@@ -5,14 +5,23 @@
 
 #article_title{
 	margin: 0 auto;
+	padding: 0;
 	width:95%;
 	background-color: green;
+}
+
+#article_title > h1{
+	margin: 0;
 }
 
 #article_tag{
 	margin: 0 auto;
 	width:95%;
 	background-color: blue;
+}
+
+#article_tag > p{
+	margin: 0;
 }
 
 #contents{

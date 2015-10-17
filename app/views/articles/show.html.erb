@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <title>記事について</title>
         <%= stylesheet_link_tag "show" %>
+        <%= javascript_include_tag 'show' %>
     </head>
     <body>
         <div id = "article_header">
             <div id = "article_title">
-                <h1>サンプルタイトルだよ♡<%= @article.title %></h1>
+                <h1><%= @article.title %></h1>
             </div>
             <div id = "article_tag">
                 <p><%= @article.tag %></p>
@@ -19,7 +20,11 @@
                 <div><%= @article.content %></div>
             </div>
             <div id = "sub-column" class = "column">
-                <p>サブカラムだよ♡</p>
+                <div id = "nav-col">
+                    <ul>
+                      <li>r</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="writer">
