@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+      <%= stylesheet_link_tag "post" %>
+      <%= javascript_include_tag "post" %>
+      <%= javascript_include_tag "http://code.jquery.com/jquery-1.11.3.min.js" %>
+      <%= javascript_include_tag "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>
+      <%= javascript_include_tag "marked.min" %>
+      
+
+  </head>
+<div class="halftextarea halfpage">
+<textarea class="form-control" cols="45" id="markedtext" rows="10"></textarea>
+</div>
+<div class="halfpage">
+
+</div>
+
+<textarea1></textarea1>
+<button id="overlay__goimadoko" type="button" class="btn btn-default btn-block">いまどこ</button>
+
+<%= link_to 'New Article', new_article_path %>
+</html>
+
