@@ -1,7 +1,7 @@
 
 $(document).ready( function(){
 	//$("#halftextarea").bind('keyup',hoge(this));
-	$("#article_title").append('class="halfarea col-xs-2");
+	$("#article_title").append('class="halfarea col-xs-2"');
 	$("#article_tag").append('class="halfarea col-xs-2");
 	console.log("s");
 	$("#halftextarea").keyup(function(){
