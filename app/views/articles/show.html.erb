@@ -1,6 +1,14 @@
 <body>
+    <div id = "header">
+    <table>
+        <tr>
+        <td><%= image_tag 'logo.png' %><%= image_tag 'title.png' %></td>
+        <td><textarea name="food" rows="1"></textarea><span>×</span><textarea name="why" rows="1"></textarea></td>
+        </tr>
+    </table>
+    </div>
     <div id = "article_header">
-        <div id = "article_title">
+        <div id = "article_title" >
             <h1><%= @article.title %></h1>
         </div>
         <div id = "article_tag">
@@ -8,8 +16,8 @@
         </div>
     </div>
     <div id = "contents">
-        <div id = "main-column" class = "column">
-            <div id ="restore"><%= @article.content %></div>
+        <div id = "main-column" class = "column" class = "in_div_word_box">
+            <div id ="restore" class = "in_div_word_box"><%= @article.content %></div>
         </div>
         <div id = "sub-column" class = "column">
             <div id = "nav-col">
@@ -18,10 +26,16 @@
             </div>
         </div>
     </div>
-    <div id="writer">
+    <div id="writer" class = "in_div_word_box">
         <p><%= @article.user_id %>さんが書いた人だよ♡</p>
     </div>
-    <div id = "comments">
-        <p>コメントだよ♡</p>
+    <div id = "comments" class = "in_div_word_box">
+         <form>
+             <textarea name="kanso" rows="8"></textarea>
+             <br>
+             <input type="submit" value="送信">
+         </form>
+    </div>
+    <div id = "empty">
     </div>
 </body>
