@@ -16,8 +16,9 @@ class ArticlesController < ApplicationController
 
 	def create
 
-		@article =Article.new(article_params)
+		@article = Article.new(article_params)
 		@article.save
+		redirect_to "/articles/1"
 	end
 
 
@@ -26,4 +27,7 @@ class ArticlesController < ApplicationController
 	    def set_article
           	@article = Article.find(params[:id])
         end
+         def article_params
+    		params.require(:article).permit(:title, :tag, :content)
+  		end
 end
