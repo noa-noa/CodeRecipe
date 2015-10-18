@@ -52,13 +52,18 @@ height: 1000px;
 #article_tag{
 
 	margin: 10px;
-	width:30%;
+	width:50%;
 	float:left;
 	background-color: white;
 }
 input{
 	margin: 10px;
-	width:30%;
+	width:40%;
 	float:left;
 
+}
+img{
+	width: 40%;
+	height: 0%;
+	float: center;
 }

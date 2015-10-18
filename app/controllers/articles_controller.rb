@@ -18,6 +18,7 @@ class ArticlesController < ApplicationController
 
 		@article = Article.new(article_params)
 		@article.save
+#		Article.find_by(article_params.uid)
 		redirect_to "/articles/1"
 	end
 
