@@ -1,13 +1,51 @@
+body{
+	background-color: #FAEBD7;
+}
+
+p{
+	color: #424242;
+}
+
+span{
+	font-size: 30px;
+	color: #3B170B;
+}
+
+#header{
+	margin: 0 auto;
+	padding: 0;
+	width:95%;
+	margin-top: 30px;
+	float: left;
+}
+
+#header img{
+	width: 20%;
+	float: left;
+}
+
+#logo{
+	width: 10%;
+}
+
+#header input{
+	width: 10%;
+	float: right;
+}
+
+
 #article_header{
 	width:100%;
-	background-color: red;
+	color: #3B170B;
+	clear: both;
+	margin-top: 30px;
+	padding-top: 30px;
 }
 
 #article_title{
 	margin: 0 auto;
 	padding: 0;
 	width:95%;
-	background-color: green;
 }
 
 #article_title > h1{
@@ -17,7 +55,7 @@
 #article_tag{
 	margin: 0 auto;
 	width:95%;
-	background-color: blue;
+	background-color: #FAEBD7;
 }
 
 #article_tag > p{
@@ -27,17 +65,39 @@
 #contents{
 	margin: 0 auto;
 	width:95%;
-	background-color: red;
+	background-color: #FAEBD7;
 }
 
 #main-column{
 	width: 80%;
-	background-color: green;
+	background-color: white;
+	color: #424242;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FFE8AF;
+	float: left;
 }
 
 #sub-column{
-	width: 20%;
-	background-color: blue;
+	width: 19%;
+	background-color: #FAEBD7;
+	color: #424242;
+	position: fixed;
+	float: right;
+	margin-left: 76%;
+	padding-left: -3%;
+}
+
+#nav-col{
+	background-color: white;
+}
+
+#sub-column img{
+	width: 100%;
+}
+
+.in_div_word_box{
+	padding-left: 3%;
 }
 
 .column{
@@ -47,12 +107,31 @@
 #writer{
 	margin: 0 auto;
 	width:95%;
-	background-color: yellow;
+	background-color: #FAEBD7;
 	clear: both;
 }
 
 #comments{
 	margin: 0 auto;
-	width:95%;
-	background-color: blue;
+	width: 80%;
+	background-color: #FAEBD7;
+	float: left;
+}
+
+#empty{
+	width: 20%;
+	float: left;
+}
+
+form{
+	text-align : center ;
+	width: 100%;
+}
+
+#comments textarea{
+	width:70%;
+}
+
+input{
+	width:25%;
 }

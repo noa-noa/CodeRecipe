@@ -1,6 +1,13 @@
 <body>
+    <div id = "header">
+    <%= image_tag 'title.png' %>
+    <input type="button" value="検索"></input>
+    <input type="textarea"></input>
+    <input type="button" value="投稿"></input>
+    <input type="button" value="ログイン"></input>
+    </div>
     <div id = "article_header">
-        <div id = "article_title">
+        <div id = "article_title" >
             <h1><%= @article.title %></h1>
         </div>
         <div id = "article_tag">
@@ -8,20 +15,29 @@
         </div>
     </div>
     <div id = "contents">
-        <div id = "main-column" class = "column">
-            <div id ="restore"><%= @article.content %></div>
+        <div id = "main-column" class = "column" class = "in_div_word_box">
+            <div id ="restore" class = "in_div_word_box"><%= @article.content %></div>
         </div>
         <div id = "sub-column" class = "column">
             <div id = "nav-col">
                 <ul>
                 </ul>
             </div>
+            <br>
+        <%= image_tag 'tera' %>
+        <%= image_tag 'tech' %>
         </div>
     </div>
-    <div id="writer">
-        <p><%= @article.user_id %>さんが書いた人だよ♡</p>
+    <div id="writer" class = "in_div_word_box">
+        <p><%= @article.user_id %>さんが書いた人です. </p>
     </div>
-    <div id = "comments">
-        <p>コメントだよ♡</p>
+    <div id = "comments" class = "in_div_word_box">
+         <form>
+             <textarea name="kanso" rows="8"></textarea>
+             <br>
+             <input type="submit" value="送信">
+         </form>
+    </div>
+    <div id = "empty">
     </div>
 </body>
