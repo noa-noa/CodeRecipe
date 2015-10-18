@@ -3,8 +3,8 @@ li {
 }
 
 .welcome_header {
-   width: 2000px;
-   height: 60px;
+   width: 1150px;
+   height: 80px;
 }
 
 
@@ -19,5 +19,5 @@ div.block1 {
    height: 200px;
 }
 .category {
-   height: 200px;
+   height: 400px;
 }
