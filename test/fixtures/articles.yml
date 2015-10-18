@@ -3,11 +3,15 @@
 one:
   title: MyString
   tag: MyString
-  file: MyString
   content: MyText
+  file: MyString
+  img: MyString
+  user_id: 1
 
 two:
   title: MyString
   tag: MyString
-  file: MyString
   content: MyText
+  file: MyString
+  img: MyString
+  user_id: 1
