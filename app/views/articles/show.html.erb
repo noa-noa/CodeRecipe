@@ -1,11 +1,10 @@
 <body>
     <div id = "header">
-    <table>
-        <tr>
-        <td><%= image_tag 'logo.png' %><%= image_tag 'title.png' %></td>
-        <td><textarea name="food" rows="1"></textarea><span>×</span><textarea name="why" rows="1"></textarea></td>
-        </tr>
-    </table>
+    <%= image_tag 'title.png' %>
+    <input type="button" value="検索"></input>
+    <input type="textarea"></input>
+    <input type="button" value="投稿"></input>
+    <input type="button" value="ログイン"></input>
     </div>
     <div id = "article_header">
         <div id = "article_title" >
@@ -24,10 +23,13 @@
                 <ul>
                 </ul>
             </div>
+            <br>
+        <%= image_tag 'tera' %>
+        <%= image_tag 'tech' %>
         </div>
     </div>
     <div id="writer" class = "in_div_word_box">
-        <p><%= @article.user_id %>さんが書いた人だよ♡</p>
+        <p><%= @article.user_id %>さんが書いた人です. </p>
     </div>
     <div id = "comments" class = "in_div_word_box">
          <form>
