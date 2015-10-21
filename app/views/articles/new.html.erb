@@ -3,24 +3,34 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-      <%= stylesheet_link_tag "post" %>
-      <%= javascript_include_tag "post" %>
+      <%= stylesheet_link_tag "hidden/post" %>
+      <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" %>
+      <%= javascript_include_tag "hidden/post" %>
       <%= javascript_include_tag "http://code.jquery.com/jquery-1.11.3.min.js" %>
       <%= javascript_include_tag "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" %>
-      <%= javascript_include_tag "marked.min" %>
+      <%= javascript_include_tag "hidden/marked.min" %>
       
-
   </head>
-<div class="halftextarea halfpage">
-<textarea class="form-control" cols="45" id="markedtext" rows="10"></textarea>
+  <body>
+
+  <%= image_tag("title.png") %>
+  <div id="outdiv">
+  <%= form_for(@article) do |f| %>
+    <%= f.text_field  :title %>
+
+    <div class="halfarea"><textarea id="halftextarea" class="form-control" placeholder="投稿内容を記述してください"></textarea>
+ </div>
+
+<div id="halfhtmlpage" class="container nav-header nav navbar-nav navbar navbar-default">
 </div>
-<div class="halfpage">
+    <%= f.text_field :tag %>    
+    <%= f.hidden_field  :content %>
+    <%= submit_tag "投稿" %>
+    <% end %>
 
 </div>
 
-<textarea1></textarea1>
-<button id="overlay__goimadoko" type="button" class="btn btn-default btn-block">いまどこ</button>
 
-<%= link_to 'New Article', new_article_path %>
+</body>
 </html>
 

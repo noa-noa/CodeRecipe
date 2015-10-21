@@ -1,6 +1,69 @@
-.halfpage{
+
+body{
+	width: 100%;
+	height: 100%
+}
+#outdiv{
+width:100%;
+height: 1000px;
+}
+#title_area{
+	width:95%;
+	float:left;
+	margin: 10px;
+	height: 10%;
+}
+#article_title{
+		width:82%;
+	float:left;
+	margin: 10px;
+	height: 5%;
+	font-size:200%;
+	color:orange;
+	background-color: white;
+}
+#new_article{
+	width:90%;
+	height: 100%;
+	
+	margin: 10px;
+}
+.halfarea{
+	width:40%;
+	height: 70%;
+	float:left;
+	margin: 10px;
+}
+#halfhtmlpage{
+		width:40%;
+	height: 70%;
+	float:left;
+	margin: 10px;
+}
+
+#halftextarea{
+	width:100%;
+	height:100%;	
+}
+#postbutton{
+	width:20%;
+	margin:10px;
+}
+#article_tag{
+
+	margin: 10px;
 	width:50%;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
+	float:left;
+	background-color: white;
+}
+input{
+	margin: 10px;
+	width:40%;
+	float:left;
+
+}
+img{
+	width: 40%;
+	height: 0%;
+	float: center;
 }
